@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>Getting Started with deck.js</title>
+	<title>Ruby enumerable and other cool stuff</title>
 	
 	<meta name="description" content="A jQuery library for modern HTML presentations">
 	<meta name="author" content="Caleb Troughton">
@@ -194,15 +194,6 @@
   <img src="http://i3.kym-cdn.com/entries/icons/original/000/000/142/feelsgood.jpg" alt="fgm" />
 </section>
 
-<section class="slide" id="symbol-to-proc">
-<h2>WTF is &:this</h2>
-<h3>Meet Symbol#to_proc</h3>
-<ul>
-  <pre><code>things.map(&:color)</code></pre>
-  <p> is the same as</p>
-  <pre><code>things.map { |thing| thing.color }</code></pre>
-</section>
-
 <section class="slide" id="active-support">
 	<h1>Active Support</h1>
 </section>
@@ -283,6 +274,20 @@
 <section class="slide" id="thanks">
   <h1>Thanks!</h1>
 </section>
+
+<section class="slide" id="references">
+  <h1>References</h1>
+</section>
+
+<section class="slide" id="symbol-to-proc">
+  <h2>WTF is &amp;:this</h2>
+  <h3>Meet Symbol#to_proc</h3>
+  <pre><code>things.map(&amp;:color)</code></pre>
+  <p> is the same as</p>
+  <pre><code>things.map { |thing| thing.color }</code></pre>
+</section>
+
+
 
 <!-- deck.navigation snippet -->
 <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
