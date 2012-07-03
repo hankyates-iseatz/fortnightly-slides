@@ -157,6 +157,21 @@
   </ul>
 </section>
 
+<section class="slide" id="sorting">
+	<h2>Sort methods</h2>
+  <p><code>#sort</code> without a block does <code>array.sort { |a, b| a &lt;=&gt; b }</code></p>
+  <p><code>#sort_by</code> only yields one block parameter</p>
+  <pre><code>
+  cars.sort_by { |car| car.body.color }
+  </code></pre>
+
+  <pre><code>
+  rates.sort_by(&amp;:cost)
+  </code></pre>
+
+  <p><code>#sort_by</code> will be faster than <code>#sort</code> in most cases, as it uses the Schwartzian Transform approach</p>
+</section>
+
 <section class="slide" id="compact-flatten">
 	<h2>#compact</h2>
   <p>Using <code>#compact</code> to remove nils</p>
