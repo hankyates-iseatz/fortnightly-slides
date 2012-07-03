@@ -89,7 +89,7 @@
   <p>Using <code>#map</code> to create a new array</p>
   <pre><code>
   def room_promotions
-    @hotel_room.promotions.map(&amp;:descriptions)
+    @hotel_room.promotions.map(&amp;:description)
   end
   </code></pre>
 </section>
@@ -103,6 +103,7 @@
   # map      0.870000   0.000000   0.870000 (  0.929773)
   # each     0.930000   0.010000   0.940000 (  1.009339)
   </code></pre>
+
   <p>Note: symbol to proc is fast!</p>
 </section>
 
@@ -218,6 +219,21 @@
   <p>Also, please don't do <code>unless something.blank?</code>, do <code>if something.present?</code> instead. Don't code in double negatives!</p>
 </section>
 
+<section class="slide" id="object-try">
+  <h2>#try</h2>
+  <p>nil-safe way to send a message to an object<p>
+
+  <pre><code>
+  flight.segment.slice.leg &amp;&amp; flight.segment.slice.leg.number
+  </code></pre>
+
+  <pre><code>
+  flight.segment.slice.leg.try(:number)
+  </code></pre>
+
+  <p>Don't chain these together! That starts to smell.</p>
+</section>
+
 <section class="slide" id="active-support-time">
   <h2>date/time methods</h2>
   <p>adds <code>#days</code>, <code>#minutes</code>, <code>#seconds</code>, <code>#months</code>, etc. to Fixnum
@@ -304,3 +320,4 @@ $(function() {
 
 </body>
 </html>
+
