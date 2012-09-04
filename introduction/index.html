@@ -92,6 +92,14 @@
 
 <section class="slide" id="how">
 	<h2>How?</h2>
+  <h3>What you need.</h3>
+  <ol>
+    <li>Test Runner (Jasmine)</li>
+    <li>Application</li>
+    <li>Tests</li>
+    <li>Browser</li>
+  </ol>
+  <h3>Browser options</h3>
   <ol>
     <li>Browser</li>
     <li>CLI (Headless Browser)</li>
@@ -102,8 +110,9 @@
 	<h2>Browser</h2>
   <ol>
     <li>Load test suite</li>
-    <li>Load Application</li>
-    <li>Load Tests</li>
+    <li>Load application</li>
+    <li>Load tests</li>
+    <li>Serve the application</li>
     <li>Visit page in browser</li>
   </ol>
 </section>
@@ -111,14 +120,13 @@
 <section id="proscons" class="slide">
   <h2>Pros</h2>
   <ul>
-    <li>More Accurate Environment</li>
+    <li>More accurate environment</li>
     <li>Easier with legacy/cross browser</li>
   </ul>
   <h2>Cons</h2>
   <ul>
     <li>Requires server</li>
-    <li>Less Portable</li>
-    <li>Deal with different asset pipeline from dev or prod</li>
+    <li>Less portable</li>
   </ul>
 </section>
 
@@ -126,7 +134,7 @@
 	<h2>CLI</h2>
   <ol>
     <li>Selenium Web Driver</li>
-    <li>PhantomJS</li>
+    <li>PhantomJS (Headless webkit browser)</li>
   </ol>
 </section>
 
@@ -137,9 +145,18 @@
   </ul>
   <h2>Cons</h2>
   <ul>
-    <li>Requires Local browser isntallation</li>
-    <li>Cross Browser more difficult</li>
+    <li>Requires local browser installation</li>
+    <li>Cross browser more difficult</li>
   </ul>
+</section>
+
+<section class="slide" id="examples">
+  <h1>Examples</h1>
+  <ol>
+    <li>Jasmine Gem</li>
+    <li>rake jasmine</li>
+    <li>rake jasmine:ci JASMINE_BROWSER=firefox</li>
+  </ol>
 </section>
 
 <section class="slide" id="thanks">
